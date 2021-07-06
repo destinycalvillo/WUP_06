@@ -45,11 +45,19 @@ barchartGC(~RACE + CAPPUN,data=GSS, type="percent")
 
 ```
 
-It appears that the Black race are more against or opposed to CAPPUN compared to the White race and Other race, who are more in favor of it. The Other group are more in favor of CAPPUN than the White group as well.
+It appears that the Black race are more likely to be against or opposed to CAPPUN compared to the White race and Other race, who are both more in favor of CAPPUN. Still, the Other race is more in favor of CAPPUN than the White race as well.
 
 ### Numerical Descriptive Results
 
 <!--Numerical results go here. Use the numerical results to describe the patterns if any that exist in the data as focused toward the research question!-->
+
+```{r}
+table1 <- xtabs(~RACE + CAPPUN, data=GSS)
+rowPerc(table1)
+colPerc(table1)
+```
+
+The table shows that only 34.62% of the Black Race are in favor of CAPPUN whereas 83.33% of the Other Race and 68.66% of the White Race are in favor of CAPPUN. This appears to show that there is a significant difference between the Black versus White and Other races. 
 
 ## Inferential Results
 

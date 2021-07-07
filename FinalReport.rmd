@@ -65,7 +65,6 @@ The table shows that only 34.62% of the Black Race are in favor of CAPPUN wherea
 
 ```{r}
 chisq.test(table1)
-print("killroy was here")
 chisqtestGC(table1)
 ```
 
@@ -139,6 +138,8 @@ fisherXY = function(x, y, confL = 0, printAll=FALSE){
 ```{r}
 fisherXY(GSS$RACE,GSS$CAPPUN, printAll = TRUE)
 ```
+
+Based on all the inferential tests that we conducted above, we can see that the p-value is relatively small. This allows us to assume that we should reject the null-hypothesis as every race does in fact have an independent attitude towards CAPPUN. The FisherXY test above is an appropriate way to answer the research question as it satisfies this assumption through the p-value. 
 
 # Discussion and Conclusion
 
